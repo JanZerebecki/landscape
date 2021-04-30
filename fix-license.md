@@ -4,7 +4,16 @@ Some of the projects listed as Open Source with license Other or Unknown do not 
 
 The list is from entries in `processed_landscape.yml` containing `license: Other` or `license: Unknown` as of 3f1e33bd865b3e72a079eed3ab48c2fc689e9d91.
 
-Repos that need to be fixed by removing the repo url because it doesn't contain an open source licensed version:
+There were some related issues for fixing repos on which Github couldn't detect the license:
+
+https://github.com/cncf/landscape/issues/1061
+https://github.com/cncf/landscape/issues/272
+
+The code for the pretty name of these license categories is: https://github.com/cncf/landscapeapp/blob/b26e8cb7238ede044a92a986ce86aa4ed0b62c55/tools/fetchGithubStats.js#L87
+
+The code for marking items as not open source is: https://github.com/cncf/landscapeapp/blob/b26e8cb7238ede044a92a986ce86aa4ed0b62c55/tools/generateJson.js#L165
+
+Repos that need to be fixed by setting open_source: false on the entry, because it doesn't contain an open source licensed version:
 
 Repo URL|License|Notes
 -|-|-
